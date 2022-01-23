@@ -13,7 +13,7 @@ body {
 	height: 100vh;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
-	background-color: #1e1d23;
+	background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
 	font-size: 24px;
 }
 
@@ -21,8 +21,12 @@ body {
 
 .result {
 	margin: 50px;
+	border-radius: 5px;
 	background-color: blanchedalmond;
+	color: black;
 	height: 50px;width: 200px;
+	text-align: center;
+	line-height: 50px;
 }
 
 label {
