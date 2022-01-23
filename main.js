@@ -24,5 +24,13 @@ const celToFahr = () => {
     result.textContent= `${input.value}°C to ${fahr}°F`
 }
 
+const resetFunc = () => {
+    input.value = '';
+    cel = 0;
+    fahr = 0;
+    result.textContent = '';
+}
+
 changeBtn.addEventListener('click', change);
 convertBtn.addEventListener('click', celToFahr);
+resetBtn.addEventListener('click', resetFunc)
