@@ -24,6 +24,12 @@ const celToFahr = () => {
     result.textContent= `${input.value}°C to ${fahr}°F`
 }
 
+const fahrToCel = () => {
+    cel = (input.value - 32) / 1.8;
+    result.textContent= `${input.value}°F to ${cel}°C`
+}
+
+
 const resetFunc = () => {
     input.value = '';
     cel = 0;
@@ -33,4 +39,4 @@ const resetFunc = () => {
 
 changeBtn.addEventListener('click', change);
 convertBtn.addEventListener('click', celToFahr);
-resetBtn.addEventListener('click', resetFunc)
+resetBtn.addEventListener('click', resetFunc);
